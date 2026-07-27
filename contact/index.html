@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Triple Crown Group</title>
+  <meta name="description" content="Let's talk about where AI actually helps your team.">
+  <link rel="icon" type="image/png" href="/assets/brand/favicon-32.png">
+  <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="/" class="brand-mark">
+        <img src="/assets/brand/tcg-full-logo.png" alt="Triple Crown Group">
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/what-we-support/">What We Support</a></li>
+          <li><a href="/how-we-work/">How We Work</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/results/">Results</a></li>
+          <li><a href="/contact/" class="active">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="/contact/" class="btn btn-primary nav-cta desktop-only">Get in touch</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="menu-scrim"></div>
+  <nav class="mobile-menu">
+    <a href="/">Home</a>
+    <a href="/what-we-support/">What We Support</a>
+    <a href="/how-we-work/">How We Work</a>
+    <a href="/about/">About</a>
+    <a href="/results/">Results</a>
+    <a href="/contact/" class="btn btn-primary">Get in touch</a>
+  </nav>
+
+  <main>
+
+    <section class="page-hero on-dark">
+      <div class="container">
+        <span class="eyebrow reveal">Contact</span>
+        <h1 class="reveal">Let's talk about where AI actually helps your team.</h1>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <!--
+          PLACEHOLDER CONTACT FORM
+          Noah will supply the real form (fields, action endpoint or embed).
+          Swap the <form> block below for that markup once provided.
+          The confirmation modal wiring in js/main.js listens for this
+          form's "submit" event, so keep the .contact-form class on
+          whatever replaces it, or update main.js to match.
+        -->
+        <form class="contact-form reveal">
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-field">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company">
+          </div>
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="justify-self: start;">Send message</button>
+          <p class="form-note">We'll respond within 24 hours.</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="modal-scrim">
+    <div class="modal">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <img src="/assets/brand/tcg-monogram.png" alt="" class="modal-mark">
+      <h3>Message sent.</h3>
+      <p>We'll respond within 24 hours.</p>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <img src="/assets/brand/tcg-full-logo.png" alt="Triple Crown Group">
+        </div>
+        <ul class="footer-nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="/what-we-support/">What We Support</a></li>
+          <li><a href="/how-we-work/">How We Work</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/results/">Results</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Triple Crown Group.</span>
+        <span class="footer-tagline">Driving AI Efficiencies</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
