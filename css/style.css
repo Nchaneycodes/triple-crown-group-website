@@ -545,6 +545,17 @@ section { padding: 96px 0; }
 
 /* ---------- Testimonials ---------- */
 
+/* explicit three up so three cards never leave an empty trailing slot */
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 980px) {
+  .testimonial-grid { grid-template-columns: 1fr; }
+}
+
 .testimonial {
   background: var(--white);
   border: 1px solid var(--hairline);
@@ -568,21 +579,80 @@ section { padding: 96px 0; }
   letter-spacing: 0.02em;
 }
 
+/* ---------- About ---------- */
+
+.about-layout {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.about-portrait {
+  position: sticky;
+  top: calc(var(--header-h) + 32px);
+}
+
+.about-portrait img {
+  width: 100%;
+  /* height:auto is required, otherwise the height attribute on the img
+     wins over aspect-ratio and the portrait renders full bleed tall */
+  height: auto;
+  border-radius: 16px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.about-portrait figcaption {
+  margin-top: 16px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.about-portrait .role {
+  display: block;
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+.about-body p {
+  font-size: 1.15rem;
+}
+
+@media (max-width: 860px) {
+  .about-layout {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .about-portrait {
+    position: static;
+    max-width: 280px;
+  }
+}
+
 /* ---------- Results rotator ---------- */
 
 .rotator {
   position: relative;
-  min-height: 340px;
 }
 
+/*
+  Slides share one grid cell rather than being absolutely positioned, so
+  the track takes the height of the tallest slide. With absolute
+  positioning the long testimonials overflowed a fixed height track and
+  spilled over the dots and the section below.
+*/
 .rotator-track {
-  position: relative;
-  min-height: 260px;
+  display: grid;
+  align-items: center;
 }
 
 .rotator-slide {
-  position: absolute;
-  inset: 0;
+  grid-area: 1 / 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
