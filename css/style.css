@@ -20,6 +20,24 @@
 }
 */
 
+/*
+  WORDMARK FONT
+  The header wordmark should be set in Resotho Medium, the face used in
+  the logo lockup. Also a licensed commercial font, also not in the repo
+  yet. Uncomment the block below, drop the woff2 into /assets/fonts/,
+  and point --font-wordmark at 'Resotho'. Until then it inherits the
+  display face.
+*/
+
+/*
+@font-face {
+  font-family: 'Resotho';
+  src: url('/assets/fonts/resotho-medium.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+}
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap');
 
 :root {
@@ -37,6 +55,8 @@
   --brand-gradient: linear-gradient(135deg, var(--navy) 0%, var(--navy) 35%, var(--racing-green) 100%);
 
   --font-display: 'Space Grotesk', 'Segoe UI', sans-serif;
+  /* swap to 'Resotho' once the licensed webfont files are in the repo */
+  --font-wordmark: var(--font-display);
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 
   --container: 1160px;
@@ -199,12 +219,14 @@ section { padding: 96px 0; }
 .brand-mark:hover img { opacity: 0.82; }
 
 .brand-wordmark {
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: 1.05rem;
-  letter-spacing: 0.04em;
+  font-family: var(--font-wordmark);
+  font-weight: 500;
+  font-size: 1.02rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   color: var(--white);
-  line-height: 1.1;
+  line-height: 1;
+  white-space: nowrap;
 }
 
 .nav-links {
