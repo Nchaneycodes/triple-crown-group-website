@@ -639,6 +639,58 @@ section { padding: 96px 0; }
   }
 }
 
+/* ---------- FAQ ---------- */
+
+.faq-list {
+  max-width: 780px;
+  border-top: 1px solid var(--hairline);
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--hairline);
+}
+
+.faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 24px 0;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.12rem;
+  line-height: 1.35;
+  color: var(--ink);
+  transition: color 0.25s var(--ease);
+}
+
+.faq-item summary::-webkit-details-marker { display: none; }
+
+.faq-item summary:hover { color: var(--racing-green); }
+
+.faq-item summary::after {
+  content: '';
+  flex: none;
+  width: 11px;
+  height: 11px;
+  margin-top: 7px;
+  border-right: 2px solid var(--racing-green);
+  border-bottom: 2px solid var(--racing-green);
+  transform: rotate(45deg);
+  transition: transform 0.3s var(--ease);
+}
+
+.faq-item[open] summary::after { transform: rotate(-135deg); }
+
+.faq-item .faq-answer {
+  padding: 0 40px 26px 0;
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.02rem;
+}
+
 /* ---------- Results rotator ---------- */
 
 .rotator {
