@@ -38,7 +38,12 @@
 }
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap');
+/*
+  Webfonts are linked from each page's <head>, not imported here.
+  Importing them from this file would force the browser to download and
+  parse this stylesheet before it even discovers the font request, which
+  serialises the requests and delays first paint.
+*/
 
 :root {
   --racing-green: #1C3B2E;
