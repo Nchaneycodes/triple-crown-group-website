@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>AI Lead Scoring for SMBs: When It Works and When It Doesn&#x27;t | Triple Crown Group</title>
+  <meta name="description" content="AI lead scoring needs enough data to learn from. Here&#x27;s the honest threshold, what to do below it, and how to build scoring that reps actually trust.">
+  <link rel="canonical" href="https://triplecrown.group/blog/ai-lead-scoring-for-smbs/">
+
+  <meta property="og:title" content="AI Lead Scoring for SMBs: When It Works and When It Doesn&#x27;t | Triple Crown Group">
+  <meta property="og:description" content="AI lead scoring needs enough data to learn from. Here&#x27;s the honest threshold, what to do below it, and how to build scoring that reps actually trust.">
+  <meta property="og:url" content="https://triplecrown.group/blog/ai-lead-scoring-for-smbs/">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://triplecrown.group/assets/brand/tcg-og-image.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI Lead Scoring for SMBs: When It Works and When It Doesn&#x27;t | Triple Crown Group">
+  <meta name="twitter:description" content="AI lead scoring needs enough data to learn from. Here&#x27;s the honest threshold, what to do below it, and how to build scoring that reps actually trust.">
+  <meta name="twitter:image" content="https://triplecrown.group/assets/brand/tcg-og-image.png">
+
+  <link rel="icon" type="image/png" href="/assets/brand/favicon-32.png">
+  <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "AI Lead Scoring for SMBs: When It Works and When It Doesn't",
+    "description": "AI lead scoring needs enough data to learn from. Here's the honest threshold, what to do below it, and how to build scoring that reps actually trust.",
+    "author": {
+      "@type": "Person",
+      "name": "Noah Chaney",
+      "url": "https://triplecrown.group/about/"
+    },
+    "publisher": {
+      "@id": "https://triplecrown.group/#organization"
+    },
+    "image": "https://triplecrown.group/assets/brand/tcg-og-image.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://triplecrown.group/blog/ai-lead-scoring-for-smbs/"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much data do you need for AI lead scoring?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "As a practical minimum, roughly 300 to 500 closed-won opportunities and a similar volume of closed-lost, with consistent data capture across them. Below that, a model learns noise. Companies under the threshold get better results from a well-designed rules-based score."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does AI lead scoring actually improve conversion?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It improves prioritization, which improves conversion when rep capacity is the constraint. If your reps can already work every lead that comes in, scoring changes nothing. Scoring pays when there are more leads than capacity."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why don't sales reps trust lead scores?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Because scores usually arrive as a number with no explanation. A score of 87 tells a rep nothing actionable. A score with two reasons attached (what the account did and what it resembles) gets used, because the rep can evaluate whether the reasoning applies."
+        }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://triplecrown.group/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Insights",
+        "item": "https://triplecrown.group/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "AI Lead Scoring for SMBs: When It Works and When It Doesn't",
+        "item": "https://triplecrown.group/blog/ai-lead-scoring-for-smbs/"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="/" class="brand-mark">
+        <img src="/assets/brand/tcg-icon.svg" alt="Triple Crown Group">
+        <span class="brand-wordmark">Triple Crown Group</span>
+      </a>
+      <nav>
+        <ul class="nav-links"><li><a href="/">Home</a></li><li><a href="/what-we-support/">What We Support</a></li><li><a href="/how-we-work/">How We Work</a></li><li><a href="/about/">About</a></li><li><a href="/results/">Results</a></li><li><a href="/blog/" class="active">Insights</a></li><li><a href="/contact/">Contact</a></li></ul>
+      </nav>
+      <a href="/contact/" class="btn btn-primary nav-cta desktop-only">Get in touch</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="menu-scrim"></div>
+  <nav class="mobile-menu">
+<a href="/">Home</a><a href="/what-we-support/">What We Support</a><a href="/how-we-work/">How We Work</a><a href="/about/">About</a><a href="/results/">Results</a><a href="/blog/">Insights</a><a href="/contact/">Contact</a>
+    <a href="/contact/" class="btn btn-primary">Get in touch</a>
+  </nav>
+
+  <main>
+
+    <section class="page-hero post-hero on-dark">
+      <div class="container">
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <a href="/">Home</a> <span aria-hidden="true">/</span>
+          <a href="/blog/">Insights</a>
+        </nav>
+        <p class="post-meta"><span class="post-cat">National</span></p>
+        <h1 class="reveal">AI Lead Scoring for SMBs: When It Works and When It Doesn&#x27;t</h1>
+      </div>
+    </section>
+
+    <section class="post-section">
+      <div class="container">
+        <article class="post-body">
+<p><strong>Quick answer:</strong> AI lead scoring needs roughly 300 to 500 closed-won opportunities with consistent data capture to learn anything real. Below that threshold, use a rules-based score built from what your team actually knows. And regardless of method, scores must come with reasons attached. A bare number gets ignored by reps every time.</p>
+<p>Lead scoring is one of the oldest AI promises in sales technology and one of the most frequently disappointing. The failures are predictable.</p>
+<h2>The data threshold, stated honestly</h2>
+<p>A model that predicts which leads convert learns from examples of leads that did and did not convert. Too few examples and it learns coincidence.</p>
+<p><strong>Practical minimums:</strong></p>
+<ul><li><strong>300 to 500 closed-won opportunities</strong> over a period recent enough to reflect your current market</li><li><strong>A comparable volume of closed-lost</strong>, properly marked, not just abandoned records</li><li><strong>Consistent data capture</strong> across that history, meaning the fields the model uses were populated the same way over the whole period</li><li><strong>A stable business model</strong> across the period. If you changed ICP, pricing, or channel eighteen months ago, older data teaches the model about a business you no longer run.</li></ul>
+<p>Most companies under about $10M in revenue do not meet this bar. That is not a failure. It is arithmetic.</p>
+<p><strong>What to do below the threshold:</strong> build a rules-based score from what your team already knows. Interview three reps about which leads they get excited about and why. Their heuristics are real signal, learned from experience, and encoding them explicitly is more valuable than a model trained on 80 examples.</p>
+<p>A rules-based score built from rep knowledge and refined quarterly outperforms a premature model, and it has the significant advantage of being explainable.</p>
+<h2>Why reps ignore scores</h2>
+<p>The single most common failure is not accuracy. It is presentation.</p>
+<p>A rep sees "Lead score: 87." That number tells them nothing they can act on. They do not know why, they cannot evaluate whether the reasoning applies to their territory, and they have no way to correct it when it is wrong. So they ignore it and work their own list.</p>
+<p><strong>The fix is explanation, not accuracy.</strong> Present scores like this:</p>
+<blockquote><p><strong>High priority.</strong> Similar to 3 accounts you closed in the last year. Visited pricing twice this week. 180 employees, manufacturing, your strongest segment.</p></blockquote>
+<p>Now the rep can evaluate the reasoning. Sometimes they will override it, correctly, because they know something the model does not. That is fine, and it is why override tracking is valuable: when reps consistently override in a particular direction, the model is missing a real signal.</p>
+<p>A moderately accurate score with reasons attached outperforms a highly accurate opaque number, because the first one gets used.</p>
+<h2>What to score on</h2>
+<p><strong>Fit signals</strong>, does this account resemble the accounts you win?</p>
+<ul><li>Firmographics: size, industry, geography, structure</li><li>Technographics: what they run, if relevant to your offering</li><li>Similarity to your closed-won profile</li></ul>
+<p><strong>Intent signals</strong>, is this account showing buying behavior?</p>
+<ul><li>Site behavior: pricing page, case studies, repeat visits, multiple people from the same domain</li><li>Content engagement depth, not just downloads</li><li>Email engagement patterns</li><li>Third-party intent data, if you license it and have validated it actually predicts anything for you</li></ul>
+<p><strong>Timing signals</strong>, is now the moment?</p>
+<ul><li>Trigger events: funding, leadership changes, expansion, facility announcements</li><li>Hiring patterns implying a priority</li><li>Renewal timing on competing solutions where visible</li></ul>
+<p><strong>Negative signals</strong>, the most under-used category:</p>
+<ul><li>Characteristics common in your closed-lost and churned accounts</li><li>Competitor employees, students, job seekers</li><li>Accounts that have been worked and lost within a defined window</li></ul>
+<p>Negative scoring often improves rep experience more than positive scoring does, because it removes the leads that waste time.</p>
+<h2>Building it: the practical sequence</h2>
+<p><strong>Step 1, Define conversion.</strong> What are you actually predicting? Closed-won is the honest target but it is slow to learn from. Many teams score to "qualified opportunity created" as a faster-learning proxy. Pick one and be explicit.</p>
+<p><strong>Step 2, Audit the data.</strong> Do you have the fields? Are they consistently populated? This step frequently ends the project temporarily, and that is a legitimate outcome, go clean the data first.</p>
+<p><strong>Step 3, Start with rules.</strong> Even if you plan to build a model, start with an explicit rules-based score. It gives you a baseline to beat and it teaches you which signals your team believes in.</p>
+<p><strong>Step 4, Add the model, in parallel.</strong> Run the model alongside the rules score without routing on it. Compare performance for a full sales cycle. Do not switch until the model demonstrably beats the rules.</p>
+<p><strong>Step 5, Present with explanation.</strong> Always. Never expose a bare number.</p>
+<p><strong>Step 6, Track overrides.</strong> When reps disagree, log it. Systematic override patterns are the highest-quality feedback available for improving the score.</p>
+<p><strong>Step 7, Retrain on a schedule.</strong> Markets drift. A model trained on 2024 buying behavior degrades. Quarterly review, annual retrain at minimum.</p>
+<h2>When scoring does not help</h2>
+<p><strong>When you have more capacity than leads.</strong> If reps can work every lead, prioritization is pointless. Solve demand generation instead.</p>
+<p><strong>When your sales cycle is very long.</strong> With an 18-month cycle, feedback loops are so slow the model is always learning from an outdated market.</p>
+<p><strong>When you have very few, very large accounts.</strong> With 40 target accounts, you do not need a model. You need account plans.</p>
+<p><strong>When lead quality is uniformly poor.</strong> Scoring a bad list gives you the least-bad items on a bad list. Fix the source.</p>
+<h2>Platform notes</h2>
+<p><strong>HubSpot</strong> offers predictive scoring on higher tiers with a reasonable data threshold. Check what your tier includes before buying external tooling.</p>
+<p><strong>Salesforce</strong> Einstein scoring similarly varies by edition. Verify what you already own.</p>
+<p><strong>Both</strong> support custom rules-based scoring on essentially all tiers, which is where most SMBs should start.</p>
+<p><strong>External tools</strong> make sense when you need signals your CRM does not capture, third-party intent, deep firmographic enrichment, or scoring across systems your CRM does not see.</p>
+<h2>Frequently asked questions</h2>
+<p><strong>How much data do you need for AI lead scoring?</strong> Roughly 300 to 500 closed-won opportunities with consistent capture, plus comparable closed-lost. Below that, use rules.</p>
+<p><strong>Does AI lead scoring improve conversion?</strong> It improves prioritization, which improves conversion when rep capacity is the binding constraint. If capacity is not the constraint, it changes nothing.</p>
+<p><strong>Why don't reps trust scores?</strong> Bare numbers with no reasoning. Attach two reasons to every score and adoption changes immediately.</p>
+<p><strong>Should marketing or sales own scoring?</strong> Build it jointly, own it in revenue operations. Marketing-only scoring optimizes for MQL volume; sales-only scoring under-weights early signals. The disagreement between them is usually where the useful conversation is.</p>
+<p><strong>How often should we retrain?</strong> Review quarterly, retrain at least annually, and retrain immediately after any significant change to your ICP, pricing, or go-to-market motion.</p>
+<hr>
+<p><em>Triple Crown Group builds scoring that reps actually use, with reasons attached. <a href="/what-we-support/">See what we support</a>.</em></p>
+        </article>
+        <ul class="post-tags"><li>lead scoring</li><li>ai</li><li>revops</li><li>marketing operations</li><li>qualification</li></ul>
+        <p class="post-back"><a href="/blog/" class="section-foot-link">All insights &rarr;</a></p>
+      </div>
+    </section>
+
+    <section class="closing-cta on-dark">
+      <div class="container">
+        <span class="eyebrow reveal">Contact</span>
+        <h2 class="reveal">Let's talk about where AI actually helps your team.</h2>
+        <a href="/contact/" class="btn btn-primary reveal">Get in touch</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <img src="/assets/brand/tcg-full-logo.svg" alt="Triple Crown Group, Driving AI Efficiencies">
+        </div>
+        <ul class="footer-nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="/what-we-support/">What We Support</a></li>
+          <li><a href="/how-we-work/">How We Work</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/results/">Results</a></li>
+          <li><a href="/blog/">Insights</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Triple Crown Group.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

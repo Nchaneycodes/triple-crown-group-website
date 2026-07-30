@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Insights | AI for Sales and Marketing Teams | Triple Crown Group</title>
+  <meta name="description" content="Practical writing on AI audits, adoption, tooling and training for sales and marketing teams across Cincinnati and Northern Kentucky.">
+  <link rel="canonical" href="https://triplecrown.group/blog/">
+
+  <meta property="og:title" content="Insights | AI for Sales and Marketing Teams | Triple Crown Group">
+  <meta property="og:description" content="Practical writing on AI audits, adoption, tooling and training for sales and marketing teams across Cincinnati and Northern Kentucky.">
+  <meta property="og:url" content="https://triplecrown.group/blog/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://triplecrown.group/assets/brand/tcg-og-image.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Insights | AI for Sales and Marketing Teams | Triple Crown Group">
+  <meta name="twitter:description" content="Practical writing on AI audits, adoption, tooling and training for sales and marketing teams across Cincinnati and Northern Kentucky.">
+  <meta name="twitter:image" content="https://triplecrown.group/assets/brand/tcg-og-image.png">
+
+  <link rel="icon" type="image/png" href="/assets/brand/favicon-32.png">
+  <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "@id": "https://triplecrown.group/blog/",
+    "name": "Triple Crown Group Insights",
+    "description": "Practical writing on AI for sales and marketing teams in Cincinnati and Northern Kentucky.",
+    "url": "https://triplecrown.group/blog/",
+    "publisher": {
+      "@id": "https://triplecrown.group/#organization"
+    },
+    "blogPost": [
+      {
+        "@type": "BlogPosting",
+        "headline": "A Day in the Life of a Sales Rep Actually Using AI",
+        "url": "https://triplecrown.group/blog/day-in-the-life-sales-rep-using-ai/",
+        "description": "An hour-by-hour walkthrough of what AI adoption looks like in practice for a B2B sales rep, what changes, what doesn't, and where the hours actually come from."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "A Two-Page AI Use Policy Template for Small Businesses",
+        "url": "https://triplecrown.group/blog/ai-use-policy-template-small-business/",
+        "description": "A copy-and-adapt AI use policy for small and mid-sized companies in Ohio and Kentucky, short enough that people actually read it."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "AI Consulting for Northern Kentucky Businesses: Boone, Kenton, and Campbell Counties",
+        "url": "https://triplecrown.group/blog/ai-consulting-northern-kentucky/",
+        "description": "What AI consulting looks like for Northern Kentucky companies (manufacturing, logistics, life sciences) and why the region's industry mix changes which use cases pay first."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "How Much Does AI Consulting Cost in Cincinnati? (2026 Pricing Guide)",
+        "url": "https://triplecrown.group/blog/ai-consulting-cost-cincinnati/",
+        "description": "Real pricing ranges for AI consulting in Cincinnati and Northern Kentucky in 2026 (audits, implementation, training, and retainers) plus what drives cost up or down."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "How to Choose an AI Consultant in Cincinnati or Northern Kentucky",
+        "url": "https://triplecrown.group/blog/how-to-choose-ai-consultant-cincinnati/",
+        "description": "Twelve questions that separate real AI consultants from resellers and deck-builders, written for Cincinnati and NKY sales and marketing leaders doing the buying."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "What Does an AI Audit Actually Look Like for a Sales Team?",
+        "url": "https://triplecrown.group/blog/what-is-an-ai-audit-sales-team/",
+        "description": "A week-by-week walkthrough of a real AI audit for a sales organization. What gets measured, what the deliverable contains, and what it should cost."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "Where Cincinnati Sales Teams Actually Are With AI (Field Observations)",
+        "url": "https://triplecrown.group/blog/where-cincinnati-sales-teams-actually-are-with-ai/",
+        "description": "What we consistently see inside sales and marketing organizations across Cincinnati and Northern Kentucky, the five stages, and what moves a team from one to the next."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "AI Sales Enablement: A Complete Guide for SMB Sales Leaders",
+        "url": "https://triplecrown.group/blog/ai-sales-enablement-guide/",
+        "description": "How to use AI across the full sales cycle (research, outreach, discovery, proposals, forecasting) with the workflows that actually produce returns for small and mid-sized teams."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "How to Get Your Brand Recommended by ChatGPT (AEO for B2B Companies)",
+        "url": "https://triplecrown.group/blog/how-to-get-your-brand-recommended-by-chatgpt/",
+        "description": "A practical guide to answer engine optimization: how AI assistants choose which companies to name, and what B2B teams can do to become one of them."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "Why Most AI Pilots Fail, and the Adoption Playbook That Works",
+        "url": "https://triplecrown.group/blog/why-ai-pilots-fail/",
+        "description": "AI pilots rarely fail for technical reasons. Here are the seven failure patterns that actually kill them, and a 90-day playbook built around adoption instead of capability."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "AI Consultant vs. Agency vs. Hiring In-House: What Should a Cincinnati SMB Do?",
+        "url": "https://triplecrown.group/blog/ai-consultant-vs-agency-vs-in-house/",
+        "description": "A cost and capability comparison of the three ways to get AI into your sales and marketing team, with the real math for a Cincinnati-area small business."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "AI Consulting in Blue Ash, Ohio: Mid-Market Marketing Departments",
+        "url": "https://triplecrown.group/blog/ai-consulting-blue-ash-ohio/",
+        "description": "AI for Blue Ash and northeast Cincinnati businesses, what a mid-market marketing team of 8 to 25 people should actually build, and in what order."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "AI Consulting in Covington, KY: What Small Professional Teams Should Do First",
+        "url": "https://triplecrown.group/blog/ai-consulting-covington-ky/",
+        "description": "AI consulting for Covington businesses, a practical starting sequence for the small professional services and creative firms that make up much of the city's business base."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "AI Consulting in Downtown Cincinnati and Over-the-Rhine",
+        "url": "https://triplecrown.group/blog/ai-consulting-downtown-cincinnati-otr/",
+        "description": "AI for startups, agencies, and small teams in downtown Cincinnati and OTR. What to do when you have more ambition than budget."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "AI Consulting in Florence, KY: Running a First Pilot at an Industrial Company",
+        "url": "https://triplecrown.group/blog/ai-consulting-florence-ky/",
+        "description": "AI consulting for Florence and Boone County businesses, how to run a first AI pilot in a manufacturing or distribution sales organization without losing the room."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "AI Consulting in Fort Mitchell, Erlanger, and Crestview Hills",
+        "url": "https://triplecrown.group/blog/ai-consulting-fort-mitchell-erlanger-crestview-hills/",
+        "description": "AI for family-owned and multi-generational businesses across Kenton County, how to introduce AI into a company where the process has worked for thirty years."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "AI Consulting in Mason, Ohio: Governance for Growing Companies",
+        "url": "https://triplecrown.group/blog/ai-consulting-mason-ohio/",
+        "description": "AI for Mason and Warren County businesses, what changes when your company gets large enough that informal AI use becomes a real risk, and how to fix it without slowing people down."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "AI Consulting in Newport, KY: Customer-Facing Small Businesses",
+        "url": "https://triplecrown.group/blog/ai-consulting-newport-ky/",
+        "description": "AI for Newport and Campbell County businesses, practical uses for hospitality, retail, and service companies where the customer relationship is the product."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "AI Consulting in West Chester and Liberty Township: Scaling a Sales Team",
+        "url": "https://triplecrown.group/blog/ai-consulting-west-chester-liberty-township/",
+        "description": "AI for fast-growing companies in West Chester, Liberty Township, and Butler County, how to use AI to scale sales capacity without proportional headcount."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "AI Training for Sales and Marketing Teams in Northern Kentucky",
+        "url": "https://triplecrown.group/blog/ai-training-sales-marketing-teams-northern-kentucky/",
+        "description": "What effective AI training for a sales or marketing team actually looks like, format, length, cost, and the reason most corporate AI training produces nothing."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "AI for Cincinnati Accounting Firms and Financial Services",
+        "url": "https://triplecrown.group/blog/ai-for-cincinnati-accounting-financial-services/",
+        "description": "How CPA firms, wealth managers, and financial services companies in Greater Cincinnati can use AI in business development and client communication within regulatory limits."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "AI for Cincinnati B2B Distributors and Wholesalers",
+        "url": "https://triplecrown.group/blog/ai-for-cincinnati-b2b-distributors/",
+        "description": "How industrial and B2B distributors in Greater Cincinnati can use AI for quoting, catalog work, and inside sales, where the margin actually is."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "AI for Cincinnati CPG and Consumer Brands",
+        "url": "https://triplecrown.group/blog/ai-for-cincinnati-cpg-consumer-brands/",
+        "description": "How consumer packaged goods companies and emerging brands in the Cincinnati market can use AI for retail sales, category insight, and marketing execution."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "AI for Cincinnati Construction Companies and Contractors",
+        "url": "https://triplecrown.group/blog/ai-for-cincinnati-construction-contractors/",
+        "description": "Where AI actually helps construction firms and specialty contractors in Greater Cincinnati, bid response, takeoff support, and preconstruction business development."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "AI for Cincinnati Healthcare and Life Sciences Marketing Teams",
+        "url": "https://triplecrown.group/blog/ai-for-cincinnati-healthcare-life-sciences-marketing/",
+        "description": "How healthcare organizations and life sciences companies in Greater Cincinnati can use AI in marketing and business development without creating HIPAA or regulatory exposure."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "AI for Cincinnati Insurance Agencies and Brokers",
+        "url": "https://triplecrown.group/blog/ai-for-cincinnati-insurance-agencies/",
+        "description": "How independent agencies and commercial brokers in Greater Cincinnati can use AI for submissions, renewals, and client communication, with the compliance boundaries that matter."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "AI for Cincinnati Law Firms: Intake, Business Development, and Marketing",
+        "url": "https://triplecrown.group/blog/ai-for-cincinnati-law-firms/",
+        "description": "Where AI helps a law firm's growth side (intake response, client development, and content) plus the professional responsibility boundaries that govern all of it."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "AI for Cincinnati Manufacturers' Sales Teams",
+        "url": "https://triplecrown.group/blog/ai-for-cincinnati-manufacturers-sales-teams/",
+        "description": "How manufacturing sales teams in Greater Cincinnati and Northern Kentucky can use AI where it actually helps, quoting, technical proposals, distributor support, and long-cycle account work."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "AI for Cincinnati Marketing Agencies: Margin, Not Just Speed",
+        "url": "https://triplecrown.group/blog/ai-for-cincinnati-marketing-agencies/",
+        "description": "How agencies in Cincinnati and Northern Kentucky can use AI to protect margin and win work, including the client disclosure and pricing questions nobody wants to answer."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "AI for Cincinnati Real Estate Brokerages and Agent Teams",
+        "url": "https://triplecrown.group/blog/ai-for-cincinnati-real-estate-brokerages/",
+        "description": "Practical AI use cases for residential and commercial brokerages in Greater Cincinnati, listing content, lead response, market reporting, and where fair housing rules make AI risky."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "AI for Cincinnati Staffing and Recruiting Firms",
+        "url": "https://triplecrown.group/blog/ai-for-cincinnati-staffing-recruiting-firms/",
+        "description": "How staffing agencies and search firms in Greater Cincinnati can use AI for sourcing, client development, and job content, plus the hiring discrimination risks to avoid."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "AI for Northern Kentucky Logistics and Freight Companies",
+        "url": "https://triplecrown.group/blog/ai-for-northern-kentucky-logistics-companies/",
+        "description": "How 3PLs, freight brokers, and distribution companies around CVG can use AI in sales and account management, RFP response, quoting, and shipper research."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "Custom AI Agents for Cincinnati Businesses: What They Are and What They Cost",
+        "url": "https://triplecrown.group/blog/custom-ai-agents-cincinnati-businesses/",
+        "description": "When a custom AI agent beats an off-the-shelf tool, what one actually costs to build in the Cincinnati market, and the four agent types that pay for themselves fastest."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "Funding AI Adoption: Ohio and Kentucky Programs Worth Knowing About",
+        "url": "https://triplecrown.group/blog/funding-ai-adoption-ohio-kentucky-small-business/",
+        "description": "Grant, training reimbursement, and matching programs in Ohio and Kentucky that can offset the cost of AI adoption for small businesses, and how to think about which ones fit."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "Local SEO and AEO for Cincinnati Businesses: Getting Recommended by AI",
+        "url": "https://triplecrown.group/blog/local-seo-aeo-cincinnati-businesses/",
+        "description": "How Cincinnati and Northern Kentucky businesses can show up when someone asks ChatGPT for a local recommendation, the local entity work that drives AI citations."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "The Best AI Tools for Cincinnati Small Businesses in 2026",
+        "url": "https://triplecrown.group/blog/best-ai-tools-cincinnati-small-business/",
+        "description": "A practical, vendor-neutral shortlist of AI tools for small businesses in Cincinnati and Northern Kentucky, organized by the job you are trying to do, not by hype."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "The Cincinnati AI Ecosystem: A Guide for Business Leaders",
+        "url": "https://triplecrown.group/blog/cincinnati-ai-ecosystem-guide/",
+        "description": "Where to find AI expertise, community, and support in the Cincinnati and Northern Kentucky region, organizations, resources, and how to actually plug in."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "The Cincinnati AI Talent Market: What to Hire, What It Costs, What to Ask",
+        "url": "https://triplecrown.group/blog/cincinnati-ai-talent-market-hire-or-consultant/",
+        "description": "Salary ranges, hiring timelines, and interview questions for AI-capable roles in the Cincinnati market, plus the internal promotion option most companies overlook."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "AI Content Workflows That Don't Destroy Your Brand Voice",
+        "url": "https://triplecrown.group/blog/ai-content-workflows-without-losing-brand-voice/",
+        "description": "How to use AI in marketing content production without producing the flat, recognizable output that damages credibility, voice guides, workflow design, and review standards."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "AI Data Privacy and Security for Small Businesses: What to Lock Down First",
+        "url": "https://triplecrown.group/blog/ai-data-privacy-security-smb/",
+        "description": "A practical security and privacy checklist for SMBs deploying AI, what data must never go in, which settings actually matter, and how to write a usable AI policy."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "AI Lead Scoring for SMBs: When It Works and When It Doesn't",
+        "url": "https://triplecrown.group/blog/ai-lead-scoring-for-smbs/",
+        "description": "AI lead scoring needs enough data to learn from. Here's the honest threshold, what to do below it, and how to build scoring that reps actually trust."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "AI Meeting Notes and Call Intelligence: The Easiest Win in Sales",
+        "url": "https://triplecrown.group/blog/ai-meeting-notes-call-intelligence-pipeline-reviews/",
+        "description": "Why call capture is the best first AI project for most sales teams, how to roll it out without triggering surveillance concerns, and what to do with the data."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "AI SDRs and Outbound: What Actually Works and What's Noise",
+        "url": "https://triplecrown.group/blog/ai-sdr-outbound-what-works/",
+        "description": "An honest assessment of AI SDR tools and AI-assisted outbound, where the technology genuinely helps, where it destroys reply rates, and how to tell the difference."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "ChatGPT vs. Claude vs. Copilot vs. Gemini for Sales Teams",
+        "url": "https://triplecrown.group/blog/chatgpt-vs-claude-vs-copilot-vs-gemini-sales-teams/",
+        "description": "A practical comparison of the four major AI assistants for B2B sales organizations. What each is genuinely better at, and why the choice matters less than you think."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "Custom AI Agents vs. Off-the-Shelf Tools: How to Decide",
+        "url": "https://triplecrown.group/blog/custom-ai-agents-vs-off-the-shelf-tools/",
+        "description": "A decision framework for build versus buy in AI, the four questions that settle it, the real cost comparison, and the middle path most companies should take."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "How to Build a Prompt Library for Your Sales Team (With Examples)",
+        "url": "https://triplecrown.group/blog/build-a-prompt-library-for-your-sales-team/",
+        "description": "A working framework for building and maintaining a sales prompt library, structure, governance, and eight prompts you can adapt today."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "How to Get a Skeptical Sales Team to Actually Use AI",
+        "url": "https://triplecrown.group/blog/ai-change-management-skeptical-sales-team/",
+        "description": "Sales rep resistance to AI is usually rational. Here's what's actually behind it and the change management approach that works, without mandates that backfire."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "How to Measure ROI on AI for Sales and Marketing",
+        "url": "https://triplecrown.group/blog/how-to-measure-ai-roi-sales-marketing/",
+        "description": "A concrete measurement framework for AI investments, which metrics to baseline, how to attribute results honestly, and the four numbers that actually matter at 90 days."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "The 90-Day AI Roadmap for a 50-Person Sales and Marketing Org",
+        "url": "https://triplecrown.group/blog/90-day-ai-roadmap-sales-marketing/",
+        "description": "A week-by-week implementation plan for getting AI into a mid-sized sales and marketing organization. What to do, in what order, with what budget."
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "Using AI to Fix CRM Data Hygiene (Salesforce and HubSpot)",
+        "url": "https://triplecrown.group/blog/ai-for-crm-data-hygiene/",
+        "description": "Bad CRM data breaks every AI project downstream. Here's how to use AI to clean it (deduplication, enrichment, note structuring) and what to do in what order."
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://triplecrown.group/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Insights",
+        "item": "https://triplecrown.group/blog/"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="/" class="brand-mark">
+        <img src="/assets/brand/tcg-icon.svg" alt="Triple Crown Group">
+        <span class="brand-wordmark">Triple Crown Group</span>
+      </a>
+      <nav>
+        <ul class="nav-links"><li><a href="/">Home</a></li><li><a href="/what-we-support/">What We Support</a></li><li><a href="/how-we-work/">How We Work</a></li><li><a href="/about/">About</a></li><li><a href="/results/">Results</a></li><li><a href="/blog/" class="active">Insights</a></li><li><a href="/contact/">Contact</a></li></ul>
+      </nav>
+      <a href="/contact/" class="btn btn-primary nav-cta desktop-only">Get in touch</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="menu-scrim"></div>
+  <nav class="mobile-menu">
+<a href="/">Home</a><a href="/what-we-support/">What We Support</a><a href="/how-we-work/">How We Work</a><a href="/about/">About</a><a href="/results/">Results</a><a href="/blog/">Insights</a><a href="/contact/">Contact</a>
+    <a href="/contact/" class="btn btn-primary">Get in touch</a>
+  </nav>
+
+  <main>
+
+    <section class="page-hero on-dark">
+      <div class="container">
+        <span class="eyebrow reveal">Insights</span>
+        <h1 class="reveal">Practical AI for sales and marketing teams.</h1>
+        <p class="subhead reveal">50 pieces on auditing, building and adopting AI, written for teams in Cincinnati and Northern Kentucky and for anyone doing this work seriously.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="post-grid reveal-stagger">
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">Local</span> <time datetime="2026-07">July 2026</time></p>
+            <h2><a href="/blog/day-in-the-life-sales-rep-using-ai/">A Day in the Life of a Sales Rep Actually Using AI</a></h2>
+            <p>An hour-by-hour walkthrough of what AI adoption looks like in practice for a B2B sales rep, what changes, what doesn&#x27;t, and where the hours actually come from.</p>
+            <a href="/blog/day-in-the-life-sales-rep-using-ai/" class="post-card-link">Read this &rarr;</a>
+          </article>
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">Local</span> <time datetime="2026-07">July 2026</time></p>
+            <h2><a href="/blog/ai-use-policy-template-small-business/">A Two-Page AI Use Policy Template for Small Businesses</a></h2>
+            <p>A copy-and-adapt AI use policy for small and mid-sized companies in Ohio and Kentucky, short enough that people actually read it.</p>
+            <a href="/blog/ai-use-policy-template-small-business/" class="post-card-link">Read this &rarr;</a>
+          </article>
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">Local</span> <time datetime="2026-07">July 2026</time></p>
+            <h2><a href="/blog/ai-consulting-northern-kentucky/">AI Consulting for Northern Kentucky Businesses: Boone, Kenton, and Campbell Counties</a></h2>
+            <p>What AI consulting looks like for Northern Kentucky companies (manufacturing, logistics, life sciences) and why the region&#x27;s industry mix changes which use cases pay first.</p>
+            <a href="/blog/ai-consulting-northern-kentucky/" class="post-card-link">Read this &rarr;</a>
+          </article>
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">Local</span> <time datetime="2026-07">July 2026</time></p>
+            <h2><a href="/blog/ai-consulting-cost-cincinnati/">How Much Does AI Consulting Cost in Cincinnati? (2026 Pricing Guide)</a></h2>
+            <p>Real pricing ranges for AI consulting in Cincinnati and Northern Kentucky in 2026 (audits, implementation, training, and retainers) plus what drives cost up or down.</p>
+            <a href="/blog/ai-consulting-cost-cincinnati/" class="post-card-link">Read this &rarr;</a>
+          </article>
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">Local</span> <time datetime="2026-07">July 2026</time></p>
+            <h2><a href="/blog/how-to-choose-ai-consultant-cincinnati/">How to Choose an AI Consultant in Cincinnati or Northern Kentucky</a></h2>
+            <p>Twelve questions that separate real AI consultants from resellers and deck-builders, written for Cincinnati and NKY sales and marketing leaders doing the buying.</p>
+            <a href="/blog/how-to-choose-ai-consultant-cincinnati/" class="post-card-link">Read this &rarr;</a>
+          </article>
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">Local</span> <time datetime="2026-07">July 2026</time></p>
+            <h2><a href="/blog/what-is-an-ai-audit-sales-team/">What Does an AI Audit Actually Look Like for a Sales Team?</a></h2>
+            <p>A week-by-week walkthrough of a real AI audit for a sales organization. What gets measured, what the deliverable contains, and what it should cost.</p>
+            <a href="/blog/what-is-an-ai-audit-sales-team/" class="post-card-link">Read this &rarr;</a>
+          </article>
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">Local</span> <time datetime="2026-07">July 2026</time></p>
+            <h2><a href="/blog/where-cincinnati-sales-teams-actually-are-with-ai/">Where Cincinnati Sales Teams Actually Are With AI (Field Observations)</a></h2>
+            <p>What we consistently see inside sales and marketing organizations across Cincinnati and Northern Kentucky, the five stages, and what moves a team from one to the next.</p>
+            <a href="/blog/where-cincinnati-sales-teams-actually-are-with-ai/" class="post-card-link">Read this &rarr;</a>
+          </article>
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">National</span> <time datetime="2026-07">July 2026</time></p>
+            <h2><a href="/blog/ai-sales-enablement-guide/">AI Sales Enablement: A Complete Guide for SMB Sales Leaders</a></h2>
+            <p>How to use AI across the full sales cycle (research, outreach, discovery, proposals, forecasting) with the workflows that actually produce returns for small and mid-sized teams.</p>
+            <a href="/blog/ai-sales-enablement-guide/" class="post-card-link">Read this &rarr;</a>
+          </article>
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">National</span> <time datetime="2026-07">July 2026</time></p>
+            <h2><a href="/blog/how-to-get-your-brand-recommended-by-chatgpt/">How to Get Your Brand Recommended by ChatGPT (AEO for B2B Companies)</a></h2>
+            <p>A practical guide to answer engine optimization: how AI assistants choose which companies to name, and what B2B teams can do to become one of them.</p>
+            <a href="/blog/how-to-get-your-brand-recommended-by-chatgpt/" class="post-card-link">Read this &rarr;</a>
+          </article>
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">National</span> <time datetime="2026-07">July 2026</time></p>
+            <h2><a href="/blog/why-ai-pilots-fail/">Why Most AI Pilots Fail, and the Adoption Playbook That Works</a></h2>
+            <p>AI pilots rarely fail for technical reasons. Here are the seven failure patterns that actually kill them, and a 90-day playbook built around adoption instead of capability.</p>
+            <a href="/blog/why-ai-pilots-fail/" class="post-card-link">Read this &rarr;</a>
+          </article>
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">Local</span></p>
+            <h2><a href="/blog/ai-consultant-vs-agency-vs-in-house/">AI Consultant vs. Agency vs. Hiring In-House: What Should a Cincinnati SMB Do?</a></h2>
+            <p>A cost and capability comparison of the three ways to get AI into your sales and marketing team, with the real math for a Cincinnati-area small business.</p>
+            <a href="/blog/ai-consultant-vs-agency-vs-in-house/" class="post-card-link">Read this &rarr;</a>
+          </article>
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">Local</span></p>
+            <h2><a href="/blog/ai-consulting-blue-ash-ohio/">AI Consulting in Blue Ash, Ohio: Mid-Market Marketing Departments</a></h2>
+            <p>AI for Blue Ash and northeast Cincinnati businesses, what a mid-market marketing team of 8 to 25 people should actually build, and in what order.</p>
+            <a href="/blog/ai-consulting-blue-ash-ohio/" class="post-card-link">Read this &rarr;</a>
+          </article>
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">Local</span></p>
+            <h2><a href="/blog/ai-consulting-covington-ky/">AI Consulting in Covington, KY: What Small Professional Teams Should Do First</a></h2>
+            <p>AI consulting for Covington businesses, a practical starting sequence for the small professional services and creative firms that make up much of the city&#x27;s business base.</p>
+            <a href="/blog/ai-consulting-covington-ky/" class="post-card-link">Read this &rarr;</a>
+          </article>
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">Local</span></p>
+            <h2><a href="/blog/ai-consulting-downtown-cincinnati-otr/">AI Consulting in Downtown Cincinnati and Over-the-Rhine</a></h2>
+            <p>AI for startups, agencies, and small teams in downtown Cincinnati and OTR. What to do when you have more ambition than budget.</p>
+            <a href="/blog/ai-consulting-downtown-cincinnati-otr/" class="post-card-link">Read this &rarr;</a>
+          </article>
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">Local</span></p>
+            <h2><a href="/blog/ai-consulting-florence-ky/">AI Consulting in Florence, KY: Running a First Pilot at an Industrial Company</a></h2>
+            <p>AI consulting for Florence and Boone County businesses, how to run a first AI pilot in a manufacturing or distribution sales organization without losing the room.</p>
+            <a href="/blog/ai-consulting-florence-ky/" class="post-card-link">Read this &rarr;</a>
+          </article>
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">Local</span></p>
+            <h2><a href="/blog/ai-consulting-fort-mitchell-erlanger-crestview-hills/">AI Consulting in Fort Mitchell, Erlanger, and Crestview Hills</a></h2>
+            <p>AI for family-owned and multi-generational businesses across Kenton County, how to introduce AI into a company where the process has worked for thirty years.</p>
+            <a href="/blog/ai-consulting-fort-mitchell-erlanger-crestview-hills/" class="post-card-link">Read this &rarr;</a>
+          </article>
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">Local</span></p>
+            <h2><a href="/blog/ai-consulting-mason-ohio/">AI Consulting in Mason, Ohio: Governance for Growing Companies</a></h2>
+            <p>AI for Mason and Warren County businesses, what changes when your company gets large enough that informal AI use becomes a real risk, and how to fix it without slowing people down.</p>
+            <a href="/blog/ai-consulting-mason-ohio/" class="post-card-link">Read this &rarr;</a>
+          </article>
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">Local</span></p>
+            <h2><a href="/blog/ai-consulting-newport-ky/">AI Consulting in Newport, KY: Customer-Facing Small Businesses</a></h2>
+            <p>AI for Newport and Campbell County businesses, practical uses for hospitality, retail, and service companies where the customer relationship is the product.</p>
+            <a href="/blog/ai-consulting-newport-ky/" class="post-card-link">Read this &rarr;</a>
+          </article>
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">Local</span></p>
+            <h2><a href="/blog/ai-consulting-west-chester-liberty-township/">AI Consulting in West Chester and Liberty Township: Scaling a Sales Team</a></h2>
+            <p>AI for fast-growing companies in West Chester, Liberty Township, and Butler County, how to use AI to scale sales capacity without proportional headcount.</p>
+            <a href="/blog/ai-consulting-west-chester-liberty-township/" class="post-card-link">Read this &rarr;</a>
+          </article>
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">Local</span></p>
+            <h2><a href="/blog/ai-training-sales-marketing-teams-northern-kentucky/">AI Training for Sales and Marketing Teams in Northern Kentucky</a></h2>
+            <p>What effective AI training for a sales or marketing team actually looks like, format, length, cost, and the reason most corporate AI training produces nothing.</p>
+            <a href="/blog/ai-training-sales-marketing-teams-northern-kentucky/" class="post-card-link">Read this &rarr;</a>
+          </article>
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">Local</span></p>
+            <h2><a href="/blog/ai-for-cincinnati-accounting-financial-services/">AI for Cincinnati Accounting Firms and Financial Services</a></h2>
+            <p>How CPA firms, wealth managers, and financial services companies in Greater Cincinnati can use AI in business development and client communication within regulatory limits.</p>
+            <a href="/blog/ai-for-cincinnati-accounting-financial-services/" class="post-card-link">Read this &rarr;</a>
+          </article>
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">Local</span></p>
+            <h2><a href="/blog/ai-for-cincinnati-b2b-distributors/">AI for Cincinnati B2B Distributors and Wholesalers</a></h2>
+            <p>How industrial and B2B distributors in Greater Cincinnati can use AI for quoting, catalog work, and inside sales, where the margin actually is.</p>
+            <a href="/blog/ai-for-cincinnati-b2b-distributors/" class="post-card-link">Read this &rarr;</a>
+          </article>
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">Local</span></p>
+            <h2><a href="/blog/ai-for-cincinnati-cpg-consumer-brands/">AI for Cincinnati CPG and Consumer Brands</a></h2>
+            <p>How consumer packaged goods companies and emerging brands in the Cincinnati market can use AI for retail sales, category insight, and marketing execution.</p>
+            <a href="/blog/ai-for-cincinnati-cpg-consumer-brands/" class="post-card-link">Read this &rarr;</a>
+          </article>
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">Local</span></p>
+            <h2><a href="/blog/ai-for-cincinnati-construction-contractors/">AI for Cincinnati Construction Companies and Contractors</a></h2>
+            <p>Where AI actually helps construction firms and specialty contractors in Greater Cincinnati, bid response, takeoff support, and preconstruction business development.</p>
+            <a href="/blog/ai-for-cincinnati-construction-contractors/" class="post-card-link">Read this &rarr;</a>
+          </article>
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">Local</span></p>
+            <h2><a href="/blog/ai-for-cincinnati-healthcare-life-sciences-marketing/">AI for Cincinnati Healthcare and Life Sciences Marketing Teams</a></h2>
+            <p>How healthcare organizations and life sciences companies in Greater Cincinnati can use AI in marketing and business development without creating HIPAA or regulatory exposure.</p>
+            <a href="/blog/ai-for-cincinnati-healthcare-life-sciences-marketing/" class="post-card-link">Read this &rarr;</a>
+          </article>
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">Local</span></p>
+            <h2><a href="/blog/ai-for-cincinnati-insurance-agencies/">AI for Cincinnati Insurance Agencies and Brokers</a></h2>
+            <p>How independent agencies and commercial brokers in Greater Cincinnati can use AI for submissions, renewals, and client communication, with the compliance boundaries that matter.</p>
+            <a href="/blog/ai-for-cincinnati-insurance-agencies/" class="post-card-link">Read this &rarr;</a>
+          </article>
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">Local</span></p>
+            <h2><a href="/blog/ai-for-cincinnati-law-firms/">AI for Cincinnati Law Firms: Intake, Business Development, and Marketing</a></h2>
+            <p>Where AI helps a law firm&#x27;s growth side (intake response, client development, and content) plus the professional responsibility boundaries that govern all of it.</p>
+            <a href="/blog/ai-for-cincinnati-law-firms/" class="post-card-link">Read this &rarr;</a>
+          </article>
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">Local</span></p>
+            <h2><a href="/blog/ai-for-cincinnati-manufacturers-sales-teams/">AI for Cincinnati Manufacturers&#x27; Sales Teams</a></h2>
+            <p>How manufacturing sales teams in Greater Cincinnati and Northern Kentucky can use AI where it actually helps, quoting, technical proposals, distributor support, and long-cycle account work.</p>
+            <a href="/blog/ai-for-cincinnati-manufacturers-sales-teams/" class="post-card-link">Read this &rarr;</a>
+          </article>
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">Local</span></p>
+            <h2><a href="/blog/ai-for-cincinnati-marketing-agencies/">AI for Cincinnati Marketing Agencies: Margin, Not Just Speed</a></h2>
+            <p>How agencies in Cincinnati and Northern Kentucky can use AI to protect margin and win work, including the client disclosure and pricing questions nobody wants to answer.</p>
+            <a href="/blog/ai-for-cincinnati-marketing-agencies/" class="post-card-link">Read this &rarr;</a>
+          </article>
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">Local</span></p>
+            <h2><a href="/blog/ai-for-cincinnati-real-estate-brokerages/">AI for Cincinnati Real Estate Brokerages and Agent Teams</a></h2>
+            <p>Practical AI use cases for residential and commercial brokerages in Greater Cincinnati, listing content, lead response, market reporting, and where fair housing rules make AI risky.</p>
+            <a href="/blog/ai-for-cincinnati-real-estate-brokerages/" class="post-card-link">Read this &rarr;</a>
+          </article>
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">Local</span></p>
+            <h2><a href="/blog/ai-for-cincinnati-staffing-recruiting-firms/">AI for Cincinnati Staffing and Recruiting Firms</a></h2>
+            <p>How staffing agencies and search firms in Greater Cincinnati can use AI for sourcing, client development, and job content, plus the hiring discrimination risks to avoid.</p>
+            <a href="/blog/ai-for-cincinnati-staffing-recruiting-firms/" class="post-card-link">Read this &rarr;</a>
+          </article>
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">Local</span></p>
+            <h2><a href="/blog/ai-for-northern-kentucky-logistics-companies/">AI for Northern Kentucky Logistics and Freight Companies</a></h2>
+            <p>How 3PLs, freight brokers, and distribution companies around CVG can use AI in sales and account management, RFP response, quoting, and shipper research.</p>
+            <a href="/blog/ai-for-northern-kentucky-logistics-companies/" class="post-card-link">Read this &rarr;</a>
+          </article>
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">Local</span></p>
+            <h2><a href="/blog/custom-ai-agents-cincinnati-businesses/">Custom AI Agents for Cincinnati Businesses: What They Are and What They Cost</a></h2>
+            <p>When a custom AI agent beats an off-the-shelf tool, what one actually costs to build in the Cincinnati market, and the four agent types that pay for themselves fastest.</p>
+            <a href="/blog/custom-ai-agents-cincinnati-businesses/" class="post-card-link">Read this &rarr;</a>
+          </article>
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">Local</span></p>
+            <h2><a href="/blog/funding-ai-adoption-ohio-kentucky-small-business/">Funding AI Adoption: Ohio and Kentucky Programs Worth Knowing About</a></h2>
+            <p>Grant, training reimbursement, and matching programs in Ohio and Kentucky that can offset the cost of AI adoption for small businesses, and how to think about which ones fit.</p>
+            <a href="/blog/funding-ai-adoption-ohio-kentucky-small-business/" class="post-card-link">Read this &rarr;</a>
+          </article>
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">Local</span></p>
+            <h2><a href="/blog/local-seo-aeo-cincinnati-businesses/">Local SEO and AEO for Cincinnati Businesses: Getting Recommended by AI</a></h2>
+            <p>How Cincinnati and Northern Kentucky businesses can show up when someone asks ChatGPT for a local recommendation, the local entity work that drives AI citations.</p>
+            <a href="/blog/local-seo-aeo-cincinnati-businesses/" class="post-card-link">Read this &rarr;</a>
+          </article>
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">Local</span></p>
+            <h2><a href="/blog/best-ai-tools-cincinnati-small-business/">The Best AI Tools for Cincinnati Small Businesses in 2026</a></h2>
+            <p>A practical, vendor-neutral shortlist of AI tools for small businesses in Cincinnati and Northern Kentucky, organized by the job you are trying to do, not by hype.</p>
+            <a href="/blog/best-ai-tools-cincinnati-small-business/" class="post-card-link">Read this &rarr;</a>
+          </article>
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">Local</span></p>
+            <h2><a href="/blog/cincinnati-ai-ecosystem-guide/">The Cincinnati AI Ecosystem: A Guide for Business Leaders</a></h2>
+            <p>Where to find AI expertise, community, and support in the Cincinnati and Northern Kentucky region, organizations, resources, and how to actually plug in.</p>
+            <a href="/blog/cincinnati-ai-ecosystem-guide/" class="post-card-link">Read this &rarr;</a>
+          </article>
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">Local</span></p>
+            <h2><a href="/blog/cincinnati-ai-talent-market-hire-or-consultant/">The Cincinnati AI Talent Market: What to Hire, What It Costs, What to Ask</a></h2>
+            <p>Salary ranges, hiring timelines, and interview questions for AI-capable roles in the Cincinnati market, plus the internal promotion option most companies overlook.</p>
+            <a href="/blog/cincinnati-ai-talent-market-hire-or-consultant/" class="post-card-link">Read this &rarr;</a>
+          </article>
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">National</span></p>
+            <h2><a href="/blog/ai-content-workflows-without-losing-brand-voice/">AI Content Workflows That Don&#x27;t Destroy Your Brand Voice</a></h2>
+            <p>How to use AI in marketing content production without producing the flat, recognizable output that damages credibility, voice guides, workflow design, and review standards.</p>
+            <a href="/blog/ai-content-workflows-without-losing-brand-voice/" class="post-card-link">Read this &rarr;</a>
+          </article>
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">National</span></p>
+            <h2><a href="/blog/ai-data-privacy-security-smb/">AI Data Privacy and Security for Small Businesses: What to Lock Down First</a></h2>
+            <p>A practical security and privacy checklist for SMBs deploying AI, what data must never go in, which settings actually matter, and how to write a usable AI policy.</p>
+            <a href="/blog/ai-data-privacy-security-smb/" class="post-card-link">Read this &rarr;</a>
+          </article>
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">National</span></p>
+            <h2><a href="/blog/ai-lead-scoring-for-smbs/">AI Lead Scoring for SMBs: When It Works and When It Doesn&#x27;t</a></h2>
+            <p>AI lead scoring needs enough data to learn from. Here&#x27;s the honest threshold, what to do below it, and how to build scoring that reps actually trust.</p>
+            <a href="/blog/ai-lead-scoring-for-smbs/" class="post-card-link">Read this &rarr;</a>
+          </article>
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">National</span></p>
+            <h2><a href="/blog/ai-meeting-notes-call-intelligence-pipeline-reviews/">AI Meeting Notes and Call Intelligence: The Easiest Win in Sales</a></h2>
+            <p>Why call capture is the best first AI project for most sales teams, how to roll it out without triggering surveillance concerns, and what to do with the data.</p>
+            <a href="/blog/ai-meeting-notes-call-intelligence-pipeline-reviews/" class="post-card-link">Read this &rarr;</a>
+          </article>
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">National</span></p>
+            <h2><a href="/blog/ai-sdr-outbound-what-works/">AI SDRs and Outbound: What Actually Works and What&#x27;s Noise</a></h2>
+            <p>An honest assessment of AI SDR tools and AI-assisted outbound, where the technology genuinely helps, where it destroys reply rates, and how to tell the difference.</p>
+            <a href="/blog/ai-sdr-outbound-what-works/" class="post-card-link">Read this &rarr;</a>
+          </article>
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">National</span></p>
+            <h2><a href="/blog/chatgpt-vs-claude-vs-copilot-vs-gemini-sales-teams/">ChatGPT vs. Claude vs. Copilot vs. Gemini for Sales Teams</a></h2>
+            <p>A practical comparison of the four major AI assistants for B2B sales organizations. What each is genuinely better at, and why the choice matters less than you think.</p>
+            <a href="/blog/chatgpt-vs-claude-vs-copilot-vs-gemini-sales-teams/" class="post-card-link">Read this &rarr;</a>
+          </article>
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">National</span></p>
+            <h2><a href="/blog/custom-ai-agents-vs-off-the-shelf-tools/">Custom AI Agents vs. Off-the-Shelf Tools: How to Decide</a></h2>
+            <p>A decision framework for build versus buy in AI, the four questions that settle it, the real cost comparison, and the middle path most companies should take.</p>
+            <a href="/blog/custom-ai-agents-vs-off-the-shelf-tools/" class="post-card-link">Read this &rarr;</a>
+          </article>
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">National</span></p>
+            <h2><a href="/blog/build-a-prompt-library-for-your-sales-team/">How to Build a Prompt Library for Your Sales Team (With Examples)</a></h2>
+            <p>A working framework for building and maintaining a sales prompt library, structure, governance, and eight prompts you can adapt today.</p>
+            <a href="/blog/build-a-prompt-library-for-your-sales-team/" class="post-card-link">Read this &rarr;</a>
+          </article>
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">National</span></p>
+            <h2><a href="/blog/ai-change-management-skeptical-sales-team/">How to Get a Skeptical Sales Team to Actually Use AI</a></h2>
+            <p>Sales rep resistance to AI is usually rational. Here&#x27;s what&#x27;s actually behind it and the change management approach that works, without mandates that backfire.</p>
+            <a href="/blog/ai-change-management-skeptical-sales-team/" class="post-card-link">Read this &rarr;</a>
+          </article>
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">National</span></p>
+            <h2><a href="/blog/how-to-measure-ai-roi-sales-marketing/">How to Measure ROI on AI for Sales and Marketing</a></h2>
+            <p>A concrete measurement framework for AI investments, which metrics to baseline, how to attribute results honestly, and the four numbers that actually matter at 90 days.</p>
+            <a href="/blog/how-to-measure-ai-roi-sales-marketing/" class="post-card-link">Read this &rarr;</a>
+          </article>
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">National</span></p>
+            <h2><a href="/blog/90-day-ai-roadmap-sales-marketing/">The 90-Day AI Roadmap for a 50-Person Sales and Marketing Org</a></h2>
+            <p>A week-by-week implementation plan for getting AI into a mid-sized sales and marketing organization. What to do, in what order, with what budget.</p>
+            <a href="/blog/90-day-ai-roadmap-sales-marketing/" class="post-card-link">Read this &rarr;</a>
+          </article>
+          <article class="post-card reveal">
+            <p class="post-card-meta"><span class="post-cat">National</span></p>
+            <h2><a href="/blog/ai-for-crm-data-hygiene/">Using AI to Fix CRM Data Hygiene (Salesforce and HubSpot)</a></h2>
+            <p>Bad CRM data breaks every AI project downstream. Here&#x27;s how to use AI to clean it (deduplication, enrichment, note structuring) and what to do in what order.</p>
+            <a href="/blog/ai-for-crm-data-hygiene/" class="post-card-link">Read this &rarr;</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing-cta on-dark">
+      <div class="container">
+        <span class="eyebrow reveal">Contact</span>
+        <h2 class="reveal">Let's talk about where AI actually helps your team.</h2>
+        <a href="/contact/" class="btn btn-primary reveal">Get in touch</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <img src="/assets/brand/tcg-full-logo.svg" alt="Triple Crown Group, Driving AI Efficiencies">
+        </div>
+        <ul class="footer-nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="/what-we-support/">What We Support</a></li>
+          <li><a href="/how-we-work/">How We Work</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/results/">Results</a></li>
+          <li><a href="/blog/">Insights</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Triple Crown Group.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
