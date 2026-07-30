@@ -1155,6 +1155,37 @@ section { padding: 96px 0; }
 
 /* ---------- Forms ---------- */
 
+/*
+  The contact form is a HubSpot embed. It brings its own markup and
+  styling, so this only constrains the width and keeps the spacing
+  consistent with the rest of the site.
+*/
+.contact-form-wrap {
+  max-width: 620px;
+}
+
+/*
+  HubSpot injects an iframe with height:100%, so the container needs a
+  height of its own or the form collapses to nothing. HubSpot sets an
+  explicit height inline once it measures the form, but that is timing
+  dependent and sometimes lands on 0. This floor is sized to a fully
+  rendered form so the submit button stays reachable when that happens.
+  It is only a floor: where HubSpot needs more room, as on narrow
+  screens, its larger value still wins.
+*/
+.hs-form-frame {
+  min-height: 520px;
+}
+
+.hs-form-frame iframe {
+  width: 100%;
+  border: 0;
+}
+
+.contact-form-wrap .form-note {
+  margin-top: 20px;
+}
+
 .contact-form {
   display: grid;
   gap: 22px;

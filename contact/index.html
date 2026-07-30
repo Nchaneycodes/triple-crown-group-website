@@ -114,46 +114,19 @@
     <section>
       <div class="container">
         <!--
-          PLACEHOLDER CONTACT FORM
-          Noah will supply the real form (fields, action endpoint or embed).
-          Swap the <form> block below for that markup once provided.
-          The confirmation modal wiring in js/main.js listens for this
-          form's "submit" event, so keep the .contact-form class on
-          whatever replaces it, or update main.js to match.
+          HubSpot form, portal 49622854. HubSpot handles submission,
+          validation, and its own confirmation message, so the site's
+          confirmation modal is no longer wired up on this page.
         -->
-        <form class="contact-form reveal">
-          <div class="form-field">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-          </div>
-          <div class="form-field">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-          <div class="form-field">
-            <label for="company">Company</label>
-            <input type="text" id="company" name="company">
-          </div>
-          <div class="form-field">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary" style="justify-self: start;">Send message</button>
+        <div class="contact-form-wrap reveal">
+          <script src="https://js.hsforms.net/forms/embed/49622854.js" defer></script>
+          <div class="hs-form-frame" data-region="na1" data-form-id="e9c5cfd6-eba3-4ac1-a900-4a50d497c6d7" data-portal-id="49622854"></div>
           <p class="form-note">We'll respond within 24 hours.</p>
-        </form>
+        </div>
       </div>
     </section>
 
   </main>
-
-  <div class="modal-scrim">
-    <div class="modal">
-      <button class="modal-close" aria-label="Close">&times;</button>
-      <img src="/assets/brand/tcg-icon-navy.svg" alt="" class="modal-mark">
-      <h3>Message sent.</h3>
-      <p>We'll respond within 24 hours.</p>
-    </div>
-  </div>
 
   <footer class="site-footer">
     <div class="container">
