@@ -25,7 +25,7 @@ This is the most oversold category in AI sales tooling, and the gap between the 
 
 **The volume problem.** AI removes the cost constraint on sending. When everyone's cost constraint disappears simultaneously, inbox volume rises, attention per message falls, and response rates decline for everyone, including the people who caused it. This is a straightforward tragedy of the commons and it is well underway.
 
-**The recognizability problem.** Buyers have learned the tells. The fake-specific opener ("I noticed your recent post about.."), the manufactured connection, the three-sentence structure with a soft CTA. Recognizing a message as machine-generated causes most recipients to disengage immediately, not because they object to AI, but because it signals the sender did not consider whether they were relevant.
+**The recognizability problem.** Buyers have learned the tells. The fake-specific opener ("I noticed your recent post about..."), the manufactured connection, the three-sentence structure with a soft CTA. Recognizing a message as machine-generated causes most recipients to disengage immediately, not because they object to AI, but because it signals the sender did not consider whether they were relevant.
 
 **The deliverability problem.** Email providers have adapted. High-volume sending from new domains with low engagement drives spam placement, and once domain reputation degrades, recovery is slow and painful. Some teams have burned their primary domain this way.
 
