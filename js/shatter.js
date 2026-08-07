@@ -17,6 +17,7 @@
   var canvas = hero.querySelector('.shatter-canvas');
   var ctx = canvas.getContext('2d', { alpha: false });
   var lines = Array.prototype.slice.call(hero.querySelectorAll('[data-in]'));
+  var cue = hero.querySelector('.shatter-cue');
   var total = parseInt(hero.dataset.frames, 10) || 110;
   var mobile = window.matchMedia('(max-width: 820px)').matches;
   var dir = mobile ? 'mobile' : 'desktop';
@@ -81,7 +82,7 @@
   }
 
   function fade(p, inAt, outAt) {
-    var ramp = 0.045;
+    var ramp = 0.03;
     if (p < inAt - ramp) return 0;
     if (p < inAt) return (p - (inAt - ramp)) / ramp;
     if (outAt >= 1) return 1;
@@ -91,6 +92,7 @@
   }
 
   function paintCopy(p) {
+    if (cue) cue.style.opacity = p > 0.04 ? 0 : 1;
     for (var i = 0; i < lines.length; i++) {
       var el = lines[i];
       var o = fade(p, parseFloat(el.dataset.in), parseFloat(el.dataset.out));
