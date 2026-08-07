@@ -442,6 +442,33 @@ section { padding: 96px 0; }
   will-change: opacity, transform;
 }
 
+/*
+  Each problem line lands in a different corner so the sequence moves
+  around the frame rather than pulsing in one spot. The resolution stays
+  centred, since it carries the headline and the buttons.
+*/
+.shatter-line {
+  max-width: min(24ch, 46vw);
+}
+
+.shatter-line.pos-br {
+  right: 7vw;
+  bottom: 16vh;
+  text-align: right;
+}
+
+.shatter-line.pos-tl {
+  left: 7vw;
+  top: 20vh;
+  text-align: left;
+}
+
+.shatter-line.pos-bl {
+  left: 7vw;
+  bottom: 18vh;
+  text-align: left;
+}
+
 .shatter-line {
   font-family: var(--font-display);
   font-weight: 600;
@@ -519,6 +546,13 @@ html.no-js .shatter-final {
   .shatter-line { font-size: clamp(1.45rem, 6.4vw, 2.2rem); }
   .shatter-final h1 { font-size: clamp(1.15rem, 4.6vw, 1.6rem); }
   .shatter-final .hero-actions { flex-direction: column; align-items: center; }
+
+  /* narrower screens need more of the width, and the corners pull in so
+     nothing collides with the fixed header or runs off the edge */
+  .shatter-line { max-width: 78vw; }
+  .shatter-line.pos-br { right: 7vw; bottom: 20vh; }
+  .shatter-line.pos-tl { left: 7vw; top: 22vh; }
+  .shatter-line.pos-bl { left: 7vw; bottom: 22vh; }
 }
 
 /* ---------- Sections / Cards ---------- */

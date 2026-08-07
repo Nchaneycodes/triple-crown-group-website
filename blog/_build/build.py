@@ -56,6 +56,9 @@ CORE_PRIORITY = [
 
 LASTMOD = "2026-07-30"
 
+# bump when css/js changes so returning visitors do not run a stale copy
+ASSET_V = "3"
+
 
 # ------------------------------------------------------------ dash removal
 # The brief forbids dashes as pause punctuation. Sources are cleaned on
@@ -312,7 +315,7 @@ FOOTER = ("""  <footer class="site-footer">
     </div>
   </footer>
 
-  <script src="/js/main.js"></script>
+  <script src="/js/main.js?v={ASSET_V_}"></script>
 </body>
 </html>
 """)
@@ -324,6 +327,7 @@ def jl(obj):
 
 
 def page(title, desc, canonical, body, schemas, og_type="website", active=""):
+    ASSET_V_ = ASSET_V
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -350,7 +354,7 @@ def page(title, desc, canonical, body, schemas, og_type="website", active=""):
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.css?v={ASSET_V_}">
 
 {chr(10).join(schemas)}
 </head>

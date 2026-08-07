@@ -26,16 +26,25 @@
   var loaded = new Array(total);
   var ready = 0;
   var current = -1;
-  var natural = { w: mobile ? 780 : 1600, h: mobile ? 369 : 758 };
+  var natural = { w: mobile ? 992 : 1984, h: mobile ? 470 : 940 };
 
   function src(i) {
     return '/assets/shatter/' + dir + '/frame-' + String(i + 1).padStart(4, '0') + '.webp';
   }
 
   function sizeCanvas() {
-    var dpr = Math.min(window.devicePixelRatio || 1, 2);
     var w = hero.clientWidth;
     var h = window.innerHeight;
+    /*
+      Never give the canvas more backing pixels than the source frame
+      actually has. At devicePixelRatio 2 a 1440px viewport asks for a
+      2880px buffer, which forces the browser to upscale the frame and is
+      what made this look soft. Capping at the source width means the
+      image maps roughly one to one instead.
+    */
+    var scale = Math.max(w / natural.w, h / natural.h);
+    var noUpscale = scale > 0 ? 1 / scale : 2;
+    var dpr = Math.max(1, Math.min(window.devicePixelRatio || 1, 2, noUpscale));
     canvas.width = Math.round(w * dpr);
     canvas.height = Math.round(h * dpr);
     canvas.style.width = w + 'px';
