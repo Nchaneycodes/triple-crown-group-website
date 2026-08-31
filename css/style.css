@@ -1250,6 +1250,48 @@ html.no-js .shatter-final {
 
 .footer-nav a:hover { color: var(--white); }
 
+/* Contact page: crawlable NAP block above the embedded form. */
+.contact-direct {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 32px;
+  max-width: 900px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid var(--hairline);
+  margin-bottom: 48px;
+}
+
+.contact-direct-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.contact-direct-label {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.contact-direct-value {
+  font-size: 1.08rem;
+  font-weight: 500;
+}
+
+a.contact-direct-value:hover { color: var(--racing-green); }
+
+.footer-contact {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-contact a { color: var(--muted-on-dark); }
+.footer-contact a:hover { color: var(--white); }
+
 .footer-bottom {
   display: flex;
   justify-content: space-between;

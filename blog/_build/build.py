@@ -22,6 +22,47 @@ SITE = "https://triplecrown.group"
 OG_IMAGE = f"{SITE}/assets/brand/tcg-og-image.png"
 ORG_ID = f"{SITE}/#organization"
 
+PHONE = "+1-859-414-4178"
+EMAIL = "nchaney@triplecrown.group"
+
+# The organization entity. Every post references it via {"@id": ORG_ID}, so it has
+# to be defined on the page too or the reference dangles.
+ORG = {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "@id": ORG_ID,
+    "name": "Triple Crown Group",
+    "alternateName": ["TCG", "Triple Crown Group AI Consultants"],
+    "url": f"{SITE}/",
+    "logo": OG_IMAGE,
+    "image": OG_IMAGE,
+    "description": ("Triple Crown Group audits, builds and trains AI for sales and "
+                    "marketing teams across Cincinnati and Northern Kentucky."),
+    "slogan": "Driving AI Efficiencies",
+    "telephone": PHONE,
+    "email": EMAIL,
+    "contactPoint": [{"@type": "ContactPoint", "contactType": "sales",
+                      "telephone": PHONE, "email": EMAIL,
+                      "areaServed": ["US-KY", "US-OH"],
+                      "availableLanguage": ["English"]}],
+    "areaServed": (
+        [{"@type": "City", "name": n} for n in [
+            "Cincinnati, OH", "Covington, KY", "Florence, KY", "Newport, KY",
+            "Fort Mitchell, KY", "Erlanger, KY", "Crestview Hills, KY",
+            "Blue Ash, OH", "Mason, OH", "West Chester, OH", "Liberty Township, OH"]]
+        + [{"@type": "AdministrativeArea", "name": n} for n in [
+            "Northern Kentucky", "Boone County, KY", "Kenton County, KY",
+            "Campbell County, KY", "Hamilton County, OH", "Greater Cincinnati"]]),
+    "serviceType": ["AI consulting", "AI audit", "AI training",
+                    "Custom AI agent development"],
+    "founder": {"@type": "Person", "@id": f"{SITE}/#noah-chaney",
+                "name": "Noah Chaney", "jobTitle": "Founder",
+                "email": EMAIL, "telephone": PHONE,
+                "url": f"{SITE}/about/", "worksFor": {"@id": ORG_ID}},
+    "sameAs": ["https://www.linkedin.com/company/triplecrowngroup",
+               "https://maps.google.com/?cid=14527737738999246731"],
+}
+
 # Posts carrying a July 2026 date: the two pillars plus the highest
 # commercial-intent and most citable pieces. Everything else publishes
 # undated as evergreen reference.
@@ -57,7 +98,7 @@ CORE_PRIORITY = [
 LASTMOD = "2026-07-30"
 
 # bump when css/js changes so returning visitors do not run a stale copy
-ASSET_V = "3"
+ASSET_V = "5"
 
 
 # ------------------------------------------------------------ dash removal
@@ -279,7 +320,7 @@ def nav_html(active):
     return f"""  <header class="site-header">
     <div class="container">
       <a href="/" class="brand-mark">
-        <img src="/assets/brand/tcg-icon.svg" alt="Triple Crown Group">
+        <img src="/assets/brand/tcg-icon.svg" alt="Triple Crown Group, AI Consultants">
         <span class="brand-wordmark">Triple Crown Group</span>
       </a>
       <nav>
@@ -312,7 +353,11 @@ FOOTER = ("""  <footer class="site-footer">
           + """        </ul>
       </div>
       <div class="footer-bottom">
-        <span>&copy; 2026 Triple Crown Group.</span>
+        <span>&copy; 2026 Triple Crown Group. AI consultants serving Greater Cincinnati and Northern Kentucky.</span>
+        <span class="footer-contact">
+          <a href="tel:+18594144178">(859) 414-4178</a>
+          <a href="mailto:nchaney@triplecrown.group">nchaney@triplecrown.group</a>
+        </span>
       </div>
     </div>
   </footer>
@@ -402,7 +447,7 @@ def main():
         if p["dated"]:
             # month precision: published in July 2026, no specific day
             article["datePublished"] = "2026-07"
-        schemas = [jl(article)]
+        schemas = [jl(ORG), jl(article)]
         if p["faq"]:
             schemas.append(jl({
                 "@context": "https://schema.org", "@type": "FAQPage",
@@ -505,7 +550,8 @@ def main():
         "Insights | AI for Sales and Marketing Teams | Triple Crown Group",
         "Practical writing on AI audits, adoption, tooling and training for sales and marketing teams across Cincinnati and Northern Kentucky.",
         f"{SITE}/blog/", index_body,
-        [jl({"@context": "https://schema.org", "@type": "Blog", "@id": f"{SITE}/blog/",
+        [jl(ORG),
+         jl({"@context": "https://schema.org", "@type": "Blog", "@id": f"{SITE}/blog/",
              "name": "Triple Crown Group Insights",
              "description": "Practical writing on AI for sales and marketing teams in Cincinnati and Northern Kentucky.",
              "url": f"{SITE}/blog/", "publisher": {"@id": ORG_ID},

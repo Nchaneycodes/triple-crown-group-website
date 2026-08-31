@@ -1,0 +1,41 @@
+# Triple Crown Group
+
+> AI consultants serving Greater Cincinnati and Northern Kentucky. We audit, build,
+> and train AI for sales and marketing teams at small and mid-sized businesses.
+
+Triple Crown Group is a service-area business founded by Noah Chaney. We work on-site
+across Boone, Kenton, and Campbell counties in Kentucky and Hamilton County in Ohio.
+We are not affiliated with Triple Crown Consulting, a separate technology staffing firm.
+
+- Contact: Noah Chaney, Founder
+- Phone: (859) 414-4178
+- Email: nchaney@triplecrown.group
+- Service area: Cincinnati, Covington, Newport, Florence, Fort Mitchell, Erlanger,
+  Crestview Hills, Blue Ash, Mason, West Chester, Liberty Township
+
+## Services
+
+- AI audit: assessment of where a sales or marketing team is today and where AI genuinely helps
+- AI tool audit: which AI tools actually fit the business, including ones already owned
+- AI training for sales and marketing teams: hands-on adoption, not slideware
+- Custom AI agents: built around a specific business, workflow, sales rep, or marketer
+- AI agents for leadership: reporting and roll-up automation
+- Ongoing AI advisory: continuing support as teams and tools change
+
+## Core pages
+
+- [Home](https://triplecrown.group/): overview and positioning
+- [What We Support](https://triplecrown.group/what-we-support/): services in detail
+- [How We Work](https://triplecrown.group/how-we-work/): engagement tiers and process
+- [About](https://triplecrown.group/about/): Noah Chaney and the firm
+- [Results](https://triplecrown.group/results/): outcomes and client testimonials
+- [Contact](https://triplecrown.group/contact/): phone, email, service area, FAQ
+- [Insights](https://triplecrown.group/blog/): 50+ articles on AI for sales and marketing
+
+## Local guides
+
+- [AI Consulting in Northern Kentucky](https://triplecrown.group/blog/ai-consulting-northern-kentucky/)
+- [AI Consulting Cost in Cincinnati](https://triplecrown.group/blog/ai-consulting-cost-cincinnati/)
+- [How to Choose an AI Consultant in Cincinnati](https://triplecrown.group/blog/how-to-choose-ai-consultant-cincinnati/)
+- [AI Consultant vs Agency vs In-House](https://triplecrown.group/blog/ai-consultant-vs-agency-vs-in-house/)
+- [Cincinnati AI Ecosystem Guide](https://triplecrown.group/blog/cincinnati-ai-ecosystem-guide/)
