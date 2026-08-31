@@ -271,8 +271,9 @@ def md_to_html(md):
 # --------------------------------------------------------------- template
 
 def nav_html(active):
+    active_attr = ' class="active"'
     items = "".join(
-        f'<li><a href="{u}"{" class=\"active\"" if u == active else ""}>{n}</a></li>'
+        f'<li><a href="{u}"{active_attr if u == active else ""}>{n}</a></li>'
         for u, n in NAV)
     mob = "".join(f'<a href="{u}">{n}</a>' for u, n in NAV)
     return f"""  <header class="site-header">
@@ -303,6 +304,7 @@ FOOTER = ("""  <footer class="site-footer">
       <div class="footer-top">
         <div class="footer-logo">
           <img src="/assets/brand/tcg-full-logo.svg" alt="Triple Crown Group, Driving AI Efficiencies">
+          <img class="footer-badge" src="/assets/brand/openai-select-partner-badge.svg" alt="OpenAI Select Partner" width="375" height="177">
         </div>
         <ul class="footer-nav">
 """

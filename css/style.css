@@ -1221,6 +1221,15 @@ html.no-js .shatter-final {
 
 .footer-logo img { width: 280px; max-width: 100%; }
 
+/* OpenAI Select Partner badge: self-contained white card, sits under the logo.
+   Needs a 2-class selector to outrank `.footer-logo img` above. */
+.footer-logo .footer-badge {
+  display: block;
+  width: 190px;
+  height: auto;
+  margin-top: 24px;
+}
+
 .footer-tagline {
   font-family: var(--font-display);
   font-weight: 600;
