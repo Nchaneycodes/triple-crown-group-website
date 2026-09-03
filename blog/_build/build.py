@@ -108,7 +108,7 @@ CORE_PRIORITY = [
 LASTMOD = "2026-07-30"
 
 # bump when css/js changes so returning visitors do not run a stale copy
-ASSET_V = "6"
+ASSET_V = "7"
 
 
 # ------------------------------------------------------------ dash removal

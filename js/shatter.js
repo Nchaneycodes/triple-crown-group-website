@@ -23,6 +23,23 @@
   var dir = mobile ? 'mobile' : 'desktop';
   var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+  /*
+    Phones get a plain gradient hero instead of the scrub. The sequence
+    cost 1.3MB of frames and ran 320vh, roughly three screens of scrolling
+    before the headline, for a headline that rendered at 18px. The markup
+    hero underneath is already complete, so CSS reveals it and this exits
+    before a single frame is requested.
+  */
+  if (mobile) {
+    hero.classList.add('is-plain');
+    return;
+  }
+
+  // The still shown when the scrub is skipped. Frame 110 is almost empty,
+  // just debris, so it carries no brand at all. This one still reads as
+  // the logo while it is coming apart.
+  var STATIC_FRAME = 37;
+
   var frames = new Array(total);
   var loaded = new Array(total);
   var ready = 0;
@@ -154,7 +171,7 @@
 
   if (reduced) {
     hero.classList.add('is-static');
-    load(total - 1, function () { draw(total - 1); });
+    load(STATIC_FRAME, function () { draw(STATIC_FRAME); });
     paintCopy(1);
     return;
   }
