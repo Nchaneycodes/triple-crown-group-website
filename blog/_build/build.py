@@ -36,8 +36,10 @@ ORG = {
     "url": f"{SITE}/",
     "logo": OG_IMAGE,
     "image": OG_IMAGE,
-    "description": ("Triple Crown Group audits, builds and trains AI for sales and "
-                    "marketing teams across Cincinnati and Northern Kentucky."),
+    "description": ("Triple Crown Group is the AI hire small businesses have not made yet. "
+                    "We audit where time and money are going, build the automations and "
+                    "agents that fix it, and stay on to run them, for owner run businesses "
+                    "across Greater Cincinnati and Northern Kentucky."),
     "slogan": "Driving AI Efficiencies",
     "telephone": PHONE,
     "email": EMAIL,
@@ -53,8 +55,8 @@ ORG = {
         + [{"@type": "AdministrativeArea", "name": n} for n in [
             "Northern Kentucky", "Boone County, KY", "Kenton County, KY",
             "Campbell County, KY", "Hamilton County, OH", "Greater Cincinnati"]]),
-    "serviceType": ["AI consulting", "AI audit", "AI training",
-                    "Custom AI agent development"],
+    "serviceType": ["AI consulting", "AI audit", "AI training", "Custom AI agent development", "Workflow automation"],
+    "knowsAbout": ["AI consulting", "AI audit", "AI adoption for small businesses", "Lead response automation", "Quoting and proposal automation", "Scheduling and follow up automation", "Back office automation", "Document automation", "Custom AI agents", "AI training for small teams", "AI governance and use policy", "Large language models", "ChatGPT", "Claude", "Microsoft Copilot", "Google Gemini"],
     "founder": {"@type": "Person", "@id": f"{SITE}/#noah-chaney",
                 "name": "Noah Chaney", "jobTitle": "Founder",
                 "email": EMAIL, "telephone": PHONE,
@@ -79,18 +81,24 @@ DATED_JULY = {
     "ai-consulting-northern-kentucky",
 }
 
+# Desktop header. Insights is deliberately absent: eight items crowd the bar,
+# so the blog is reached from the mobile drawer, the footer, and in page links.
 NAV = [
     ("/", "Home"),
+    ("/who-we-help/", "Who We Help"),
     ("/what-we-support/", "What We Support"),
     ("/how-we-work/", "How We Work"),
     ("/about/", "About"),
     ("/results/", "Results"),
-    ("/blog/", "Insights"),
     ("/contact/", "Contact"),
 ]
 
+MOBILE_NAV = NAV[:-1] + [("/blog/", "Insights")]
+FOOTER_NAV = NAV[:-1] + [("/blog/", "Insights"), ("/contact/", "Contact")]
+
 CORE_PRIORITY = [
-    ("/", "1.0"), ("/what-we-support/", "0.9"), ("/how-we-work/", "0.8"),
+    ("/", "1.0"), ("/who-we-help/", "0.9"), ("/what-we-support/", "0.9"),
+    ("/how-we-work/", "0.8"),
     ("/about/", "0.7"), ("/results/", "0.8"), ("/contact/", "0.9"),
     ("/blog/", "0.9"),
 ]
@@ -316,7 +324,7 @@ def nav_html(active):
     items = "".join(
         f'<li><a href="{u}"{active_attr if u == active else ""}>{n}</a></li>'
         for u, n in NAV)
-    mob = "".join(f'<a href="{u}">{n}</a>' for u, n in NAV)
+    mob = "".join(f'<a href="{u}">{n}</a>' for u, n in MOBILE_NAV)
     return f"""  <header class="site-header">
     <div class="container">
       <a href="/" class="brand-mark">
@@ -349,7 +357,7 @@ FOOTER = ("""  <footer class="site-footer">
         </div>
         <ul class="footer-nav">
 """
-          + "".join(f'          <li><a href="{u}">{n}</a></li>\n' for u, n in NAV)
+          + "".join(f'          <li><a href="{u}">{n}</a></li>\n' for u, n in FOOTER_NAV)
           + """        </ul>
       </div>
       <div class="footer-bottom">
