@@ -237,7 +237,9 @@ section { padding: 96px 0; }
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 24px;
+  /* 20px, not 24px: seven items plus the CTA leave only a few px of slack
+     at 1280 otherwise, and the bar reads cramped against the wordmark. */
+  gap: 20px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -1249,6 +1251,38 @@ html.no-js .shatter-final {
 }
 
 .footer-nav a:hover { color: var(--white); }
+
+/* Partnerships: white tiles so a boxed badge and a flat logo read as one set. */
+.partner-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: stretch;
+}
+
+.partner-logo {
+  background: var(--white);
+  border: 1px solid var(--hairline);
+  border-radius: 16px;
+  padding: 28px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 220px;
+  flex: 0 1 auto;
+}
+
+.partner-logo img {
+  display: block;
+  width: auto;
+  height: 64px;
+  max-width: 100%;
+}
+
+@media (max-width: 560px) {
+  .partner-logo { width: 100%; }
+  .partner-logo img { height: 52px; }
+}
 
 /* Contact page: crawlable NAP block above the embedded form. */
 .contact-direct {

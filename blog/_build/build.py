@@ -89,24 +89,26 @@ NAV = [
     ("/what-we-support/", "What We Support"),
     ("/how-we-work/", "How We Work"),
     ("/about/", "About"),
-    ("/results/", "Results"),
+    ("/partnerships/", "Partnerships"),
     ("/contact/", "Contact"),
 ]
 
-MOBILE_NAV = NAV[:-1] + [("/blog/", "Insights")]
-FOOTER_NAV = NAV[:-1] + [("/blog/", "Insights"), ("/contact/", "Contact")]
+MOBILE_NAV = NAV[:-1] + [("/results/", "Results"), ("/blog/", "Insights")]
+FOOTER_NAV = NAV[:-1] + [("/results/", "Results"), ("/blog/", "Insights"),
+                         ("/contact/", "Contact")]
 
 CORE_PRIORITY = [
     ("/", "1.0"), ("/who-we-help/", "0.9"), ("/what-we-support/", "0.9"),
     ("/how-we-work/", "0.8"),
-    ("/about/", "0.7"), ("/results/", "0.8"), ("/contact/", "0.9"),
+    ("/about/", "0.7"), ("/results/", "0.8"), ("/partnerships/", "0.8"),
+    ("/contact/", "0.9"),
     ("/blog/", "0.9"),
 ]
 
 LASTMOD = "2026-07-30"
 
 # bump when css/js changes so returning visitors do not run a stale copy
-ASSET_V = "5"
+ASSET_V = "6"
 
 
 # ------------------------------------------------------------ dash removal
