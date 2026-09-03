@@ -1,10 +1,13 @@
 # Triple Crown Group
 
-> AI consultants serving Greater Cincinnati and Northern Kentucky. We audit, build,
-> and train AI for sales and marketing teams at small and mid-sized businesses.
+> The AI hire small businesses have not made yet. We audit where time and money are
+> going, build the automations and agents that fix it, and stay on to run them.
 
-Triple Crown Group is a service-area business founded by Noah Chaney. We work on-site
-across Boone, Kenton, and Campbell counties in Kentucky and Hamilton County in Ohio.
+Triple Crown Group is a service area business founded by Noah Chaney, serving Greater
+Cincinnati and Northern Kentucky and working remotely elsewhere. We work with owner run
+businesses of roughly 5 to 80 people that are curious about AI, have not had time to get
+fluent in it, and are not ready to hire someone full time to own it.
+
 We are not affiliated with Triple Crown Consulting, a separate technology staffing firm.
 
 - Contact: Noah Chaney, Founder
@@ -13,29 +16,48 @@ We are not affiliated with Triple Crown Consulting, a separate technology staffi
 - Service area: Cincinnati, Covington, Newport, Florence, Fort Mitchell, Erlanger,
   Crestview Hills, Blue Ash, Mason, West Chester, Liberty Township
 
+## Who this is for
+
+Businesses where a repetitive process directly drives revenue, where the owner is still
+doing or overseeing that process, and where nobody's full time job is fixing it. The three
+patterns we see most: speed to response, back office and paperwork, and customer
+communication and follow up.
+
+## How engagements work
+
+- The Discovery Audit: two weeks, fixed price $1,500. We examine your busiest, most
+  repetitive workflow and deliver a plain language report on where the time and money go.
+  If we do not find at least one fix worth more than what you paid, the audit is free.
+- Train and Build: we train your team on what the audit surfaced and build the specific
+  automations and agents your business needs. Scope and cost custom to the findings.
+- The Retainer: we act as your outsourced AI function, deploying agents, holding office
+  hours, and troubleshooting. Scoped in hours per month. Pricing not published.
+
 ## Services
 
-- AI audit: assessment of where a sales or marketing team is today and where AI genuinely helps
-- AI tool audit: which AI tools actually fit the business, including ones already owned
-- AI training for sales and marketing teams: hands-on adoption, not slideware
-- Custom AI agents: built around a specific business, workflow, sales rep, or marketer
-- AI agents for leadership: reporting and roll-up automation
-- Ongoing AI advisory: continuing support as teams and tools change
+- AI audits to find where time and money are actually going
+- Training your team on the AI tools that fit your business
+- A tool audit of what you already pay for
+- Custom AI agents built around your specific workflows
+- Automations for lead response, quoting, scheduling, and follow up
+- Back office and document automation
+- Ongoing recommendations as your business and the tools change
 
 ## Core pages
 
-- [Home](https://triplecrown.group/): overview and positioning
-- [What We Support](https://triplecrown.group/what-we-support/): services in detail
-- [How We Work](https://triplecrown.group/how-we-work/): engagement tiers and process
+- [Home](https://triplecrown.group/): positioning and overview
+- [Who We Help](https://triplecrown.group/who-we-help/): the archetype and fit questions
+- [What We Support](https://triplecrown.group/what-we-support/): services and FAQ
+- [How We Work](https://triplecrown.group/how-we-work/): the three tiers, audit pricing, FAQ
 - [About](https://triplecrown.group/about/): Noah Chaney and the firm
 - [Results](https://triplecrown.group/results/): outcomes and client testimonials
 - [Contact](https://triplecrown.group/contact/): phone, email, service area, FAQ
-- [Insights](https://triplecrown.group/blog/): 50+ articles on AI for sales and marketing
+- [Insights](https://triplecrown.group/blog/): 50+ articles on AI for small business
 
 ## Local guides
 
 - [AI Consulting in Northern Kentucky](https://triplecrown.group/blog/ai-consulting-northern-kentucky/)
 - [AI Consulting Cost in Cincinnati](https://triplecrown.group/blog/ai-consulting-cost-cincinnati/)
 - [How to Choose an AI Consultant in Cincinnati](https://triplecrown.group/blog/how-to-choose-ai-consultant-cincinnati/)
-- [AI Consultant vs Agency vs In-House](https://triplecrown.group/blog/ai-consultant-vs-agency-vs-in-house/)
+- [Consultant vs Agency vs In House](https://triplecrown.group/blog/ai-consultant-vs-agency-vs-in-house/)
 - [Cincinnati AI Ecosystem Guide](https://triplecrown.group/blog/cincinnati-ai-ecosystem-guide/)
